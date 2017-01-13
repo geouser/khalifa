@@ -4,12 +4,28 @@
         float: left;
         padding: 0 15px;
 
+        @media (max-width: 767px) {
+            width: 290px;
+            display: block;
+            float: none;
+            margin: 0 auto 60px;
+        }
+
         &.first-column {
             text-align: left;
+
+            @media (max-width: 767px) {
+                text-align: center;
+            }
         }
 
         &.last-column {
             text-align: right;
+
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -19,6 +35,10 @@
         text-transform: uppercase;
         font-family: $ps;
         margin-bottom: 29px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
     }
 
     &-text {
@@ -33,6 +53,18 @@
 
 .map {
     height: 450px;
+
+    @media (max-width: 1200px) {
+        height: 400px;
+    }
+
+    @media (max-width: 991px) {
+        height: 350px;
+    }
+
+    @media (max-width: 767px) {
+        height: 300px;
+    }
 
     .gm-style a,
     .gmnoprint {
