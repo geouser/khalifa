@@ -82,8 +82,12 @@
     @media (max-width: 991px) {
         display: block;
         position: absolute;
-        left: 20px;
-        top: 35px;
+        left: 0px;
+        right: 0;
+        margin: auto;
+        width: 142px;
+        top: 25px;
+        z-index: 2;
     }
 }
 
@@ -96,7 +100,7 @@
     display: none;
     width: 40px;
     height: 40px;
-    @include position(fixed, 15px, 15px, auto, auto);
+    @include position(fixed, 15px, 7px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
@@ -122,11 +126,11 @@
     .middle_line           {   top: 18px;  margin: auto;}
     .bottom_line           {   bottom: 10px; margin: auto;}
 
-    &.active               {   -webkit-transform: translateX(-270px);
-                               -moz-transform: translateX(-270px);
-                                -ms-transform: translateX(-270px);
-                                 -o-transform: translateX(-270px);
-                                    transform: translateX(-270px);}
+    &.active               {   -webkit-transform: translateX(-260px);
+                               -moz-transform: translateX(-260px);
+                                -ms-transform: translateX(-260px);
+                                 -o-transform: translateX(-260px);
+                                    transform: translateX(-260px);}
     &.active .top_line     {   @include transform(rotate(45deg)); top: 45%;}
     &.active .bottom_line  {   @include transform(rotate(-45deg)); bottom: 45%;}
     &.active .middle_line  {   width: 0; left: 50%;}
