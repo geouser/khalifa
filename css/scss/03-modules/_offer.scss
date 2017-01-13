@@ -1,3 +1,36 @@
 .offer {
-    height: 800px;
+    height: 760px;
+    position: relative;
+    @include flex();
+    .wrapper {
+        padding-top: 100px;
+        position: relative;
+        z-index: 2;
+        @include flex();
+        p {
+            color: #FFF;
+            max-width: 650px;
+            text-align: left;
+            font-size: 36px;
+        }
+    }
+}
+.offerSlider {
+    @include position(absolute, 0, 0, auto, 0);
+    height: 100%;
+    width: 100%;
+    .slick-list,
+    .slick-track {
+        height: 100%;
+        width: 100%;
+    }
+    .slick-slide {
+        @include position(absolute, 0, 0, auto, 0);
+        height: 100%;
+        width: 100%;
+        background-position: 50% 50%;
+        -webkit-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    }
 }

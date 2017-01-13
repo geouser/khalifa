@@ -1,8 +1,12 @@
          
 .mainHeader {
-    @include position(absolute, 0, auto, auto, 0);
+    @include position(absolute, 35px, 0, auto, 0);
+    z-index: 100;
     @include transition(all, .4s);
     
+    .wrapper {
+        @include flex();
+    }
         /*.................media.............*/
         @include m800 {
             @include position(fixed, 0, auto, auto, -100%);
@@ -14,6 +18,21 @@
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 60px;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            a {
+                display: inline-block;
+                color: #FFF;
+            }
+        }
+    }
             /*.................media.............*/
             @include m800 { 
             }
