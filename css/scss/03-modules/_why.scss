@@ -1,0 +1,30 @@
+.why {
+    background-image: url("../images/why-bg.jpg");
+    background-position: 50% 50%;
+        -webkit-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+}
+.whysList {
+    margin-bottom: 75px;
+    @include flex($justify: center, $alignI: justify);
+    &__item {
+        width: 20%;
+        background-color: #FFF;
+        margin: 10px;
+        padding: 40px 15px;
+        text-align: center;
+        i {
+            display: block;
+            margin: 0 auto 30px;
+            height: 100px;
+            img {
+                max-height: 100%;
+            }
+        }
+        span {
+            display: block;
+            font-size: 18px;
+        }
+    }
+}
