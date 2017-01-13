@@ -5,6 +5,24 @@ window.params = {
 };
 
 
+/**
+     *
+     * Check if element exist on page
+     *
+     * @param el {string} jQuery object (#popup)
+     *
+     * @return {bool}
+     *
+*/
+function exist(el){
+    if ( $(el).length > 0 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 jQuery(document).ready(function($) {
 
     /*---------------------------
@@ -198,6 +216,8 @@ jQuery(document).ready(function($) {
         });
     }
 
-    googleMap_initialize(); 
+    if ( exist( '#map_canvas' ) ) {
+        googleMap_initialize();
+    }
 
 }); // end file
