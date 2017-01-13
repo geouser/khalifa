@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                 PAGE ANCHORS
     ---------------------------*/
-    $('.mainNav a, .anchor').click(function() {
+    $('.mainNav a, .anchor, .page-nav li').click(function() {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 50
         }, 800);
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
     $(window).scroll(function(){
         var currentScroll = $(this).scrollTop();
         var $currentSection;
-        var windowHalf = $(window).height() / 2;
+        var windowHalf = $(window).height() / 4;
         
         $sections.each(function(){
           var divPosition = $(this).offset().top - windowHalf;
@@ -67,8 +67,10 @@ jQuery(document).ready(function($) {
           }
         var id = $currentSection.attr('id');
           $('a').removeClass('active');
+          $('.page-nav li').removeClass('active');
           $("[href=#"+id+"]").addClass('active');
         })
+        
     });
 
     /*---------------------------
@@ -88,7 +90,7 @@ jQuery(document).ready(function($) {
 
     $('.offerSlider').slick({
         fade: true,
-        dots: true,
+        dots: false,
         autoplay: true,
         pauseOnHover: false,
         speed: 700

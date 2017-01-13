@@ -31,11 +31,11 @@
 
                 <nav class="mainNav"><!-- start navigation -->
                     <ul>
-                        <li><a href="#" class="active">Main</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Why Us</a></li>
-                        <li><a href="#">Our clients</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#main" class="active">Main</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#why">Why Us</a></li>
+                        <li><a href="#clients">Our clients</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </nav><!-- end nav -->
 
@@ -51,14 +51,11 @@
 
         <!--=================================================================================================-->
                                                     <!-- OFFER SECTION -->
-        <section class="offer">
+        <section class="offer" id="main">
             <a href="" class="logo logo--mob"><img src="images/logo.png" alt=""></a>
             <div class="offerSlider">
                 <div style="background-image: url('images/slide-1.jpg');"></div>
                 <div style="background-image: url('images/slide-2.jpg');"></div>
-                <div style="background-image: url('images/slide-1.jpg');"></div>
-                <div style="background-image: url('images/slide-2.jpg');"></div>
-                <div style="background-image: url('images/slide-1.jpg');"></div>
             </div>
             <div class="wrapper"><!-- start offerInfo -->
                 <p>We strive hard to defend the honor of our profession by adopting the highest degree of professionalism, craftsmanship and the preservation of our much valued client secrets.</p>
@@ -73,9 +70,17 @@
             </div><!-- end offerInfo -->
         </section><!-- end offer section --> 
 
+        <div class="page-nav">
+            <li href="#main" class="active"></li>
+            <li href="#services"></li>
+            <li href="#why"></li>
+            <li href="#clients"></li>
+            <li href="#contact"></li>
+        </div> 
+
          <!--=================================================================================================-->
                                                     <!-- SERVICES SECTION -->
-        <section class="services section">
+        <section class="services section" id="services">
             <div class="wrapper"><!-- start wrapper -->
                 <h2 class="section-title">Our services</h2>
                 <div class="servicesList">
@@ -127,7 +132,7 @@
 
         <!--=================================================================================================-->
                                                     <!-- WHY SECTION -->
-        <section class="why section">
+        <section class="why section" id="why">
             <div class="wrapper"><!-- start wrapper -->
                 <h2 class="section-title white">Why us?</h2>
                 <div class="whysList">
@@ -155,7 +160,7 @@
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
 
-        <section class="section clients">
+        <section class="section clients" id="clients">
             <div class="wrapper">
                 <h2 class="section-title">Our clients</h2>
                 <div class="flex-container">
@@ -164,7 +169,8 @@
                     <div class="client-item"><img src="images/client3.png" alt=""></div>
                     <div class="client-item"><img src="images/client4.png" alt=""></div>
                 </div>
-                <button class="button">Request a quote</button>
+                <section id="contact"></section>
+                <button class="button magnific" href="#modal-popup">Request a quote</button>
             </div>
         </section>
 

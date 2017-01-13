@@ -16,11 +16,20 @@
             display: block;
             margin: 0 auto 35px;
             height: 130px;
+            &:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+            }
             @media (max-width: 991px) {
                 margin-bottom: 25px;
             }
             img {
                 max-height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 98%;
             }
         }
         span {
