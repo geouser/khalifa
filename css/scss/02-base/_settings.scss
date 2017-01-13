@@ -36,7 +36,7 @@ body {
     display: block;
     margin: 0 auto 35px;
     text-align: center;
-    font: 16px $pt;
+    font: 16px $pr;
 }
 
 .section {
@@ -45,4 +45,29 @@ body {
 
 .clearfix {
     @extend %clearfix;
+}
+
+.popup {
+    background-color: #FFF;
+    padding: 75px 75px 50px;
+    width: 500px;
+    margin: auto;
+    max-width: 100%;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    @media (max-width: 500px) {
+        padding: 50px 50px 30px;
+    }
+    @media (max-width: 500px) {
+        padding: 50px 10px 30px;
+    }
+    .form {
+        span,
+        small {
+            color: #333;
+        }
+        small {
+            font-family: $pr;
+        }
+    }
 }
