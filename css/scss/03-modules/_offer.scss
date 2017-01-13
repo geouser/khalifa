@@ -9,6 +9,12 @@
         height: auto;
         padding: 100px 0;
     }
+    @media (max-width: 991px) {
+        .form {
+            display: block;
+            margin: 0 auto;
+        }
+    }
     .wrapper {
         padding-top: 100px;
         position: relative;
