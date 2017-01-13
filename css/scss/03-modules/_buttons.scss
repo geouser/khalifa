@@ -3,9 +3,12 @@
     line-height: 50px;
     width: 340px;
     display: block;
+    margin: 0 auto;
     background-color: #996e31;
     border: 1px solid #996E31;
     color: #fff;
+    cursor: pointer;
+    font: 18px $ps;
     text-transform: uppercase;
     -webkit-border-radius: 4px;
             border-radius: 4px;

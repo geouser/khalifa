@@ -87,7 +87,11 @@ jQuery(document).ready(function($) {
 
 
     $('.offerSlider').slick({
-        fade: true
+        fade: true,
+        dots: true,
+        autoplay: true,
+        pauseOnHover: false,
+        speed: 700
     });
 
     /*---------------------------
