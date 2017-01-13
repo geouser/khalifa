@@ -13,6 +13,9 @@ body {
     font-size: 36px;
     color: $grey;
     margin-bottom: 70px;
+    &.white {
+        color: #FFF;
+    }
 }
 
 
