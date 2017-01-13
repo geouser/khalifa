@@ -1,13 +1,24 @@
 .servicesList {
     @include flex();
+    @media (max-width: 991px) {
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
     &__item {
         width: 20%;
         text-align: center;
         margin-bottom: 70px;
+        @media (max-width: 991px) {
+            width: 215px;
+            margin-bottom: 50px;
+        }
         i {
             display: block;
             margin: 0 auto 35px;
             height: 130px;
+            @media (max-width: 991px) {
+                margin-bottom: 25px;
+            }
             img {
                 max-height: 100%;
             }
