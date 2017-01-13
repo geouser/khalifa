@@ -32,3 +32,15 @@
     font-weight: 100;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url('../fonts/CenturyGothic-Bold.eot');
+    src: url('../fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CenturyGothic-Bold.woff') format('woff'),
+         url('../fonts/CenturyGothic-Bold.ttf') format('truetype'),
+         url('../fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

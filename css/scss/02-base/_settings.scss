@@ -9,7 +9,10 @@ body {
 }
 
 .section-title {
-    
+    font-family: $cgb;
+    font-size: 36px;
+    color: $grey;
+    margin-bottom: 70px;
 }
 
 
@@ -23,5 +26,5 @@ body {
 
 
 .section {
-    padding: 70px 0 80px;
+    padding: 65px 0 80px;
 }
