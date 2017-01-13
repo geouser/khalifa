@@ -1,0 +1,21 @@
+.servicesList {
+    @include flex();
+    &__item {
+        width: 20%;
+        text-align: center;
+        margin-bottom: 70px;
+        i {
+            display: block;
+            margin: 0 auto 35px;
+            height: 130px;
+            img {
+                max-height: 100%;
+            }
+        }
+        span {
+            display: block;
+            text-transform: uppercase;
+            padding: 0 5px;
+        }
+    }
+}

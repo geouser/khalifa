@@ -68,6 +68,9 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('.offerSlider').slick({
+        fade: true
+    });
 
     /*---------------------------
                                   Magnific popup
