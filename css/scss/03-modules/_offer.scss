@@ -2,16 +2,50 @@
     height: 760px;
     position: relative;
     @include flex();
+    @media (max-width: 1500px) {
+        height: 660px;
+    }
+    @media (max-width: 1200px) {
+        height: auto;
+        padding: 100px 0;
+    }
+    @media (max-width: 991px) {
+        .form {
+            display: block;
+            margin: 0 auto;
+        }
+    }
     .wrapper {
         padding-top: 100px;
         position: relative;
         z-index: 2;
         @include flex();
+        @media (max-width: 1200px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media (max-width: 991px) {
+            padding-top: 0;
+            display: block;
+        }
         p {
             color: #FFF;
             max-width: 650px;
             text-align: left;
             font-size: 36px;
+            @media (max-width: 1600px) {
+                font-size: 32px;
+            }
+            @media (max-width: 1200px) {
+                font-size: 28px;
+                max-width: 500px;
+            }
+            @media (max-width: 991px) {
+                display: block;
+                margin: 0 auto 40px;
+                max-width: 80%;
+                text-align: center;
+            }
         }
     }
 }
