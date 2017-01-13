@@ -33,4 +33,31 @@
              -o-background-size: cover;
                 background-size: cover;
     }
+    .slick-dots {
+        width: 12px;
+        text-align: center;
+        right: 10%;
+        height: 90px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            -webkit-border-radius: 50%;
+                    border-radius: 50%;
+            &:before {
+                display: none;
+            }
+            &.slick-active {
+                background-color: #fff;
+            }
+            button {
+                display: none;
+            }
+        }
+    }
 }
