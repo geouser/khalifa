@@ -1,0 +1,31 @@
+.footer {
+    background-color: $grey;
+    padding: 37px 0;
+    color: #fff;
+
+    .wrapper {
+        text-align: left;
+    }
+
+    .copyright {
+        font-family: $pt;
+        display: inline-block;
+    }
+
+    .socials {
+        float: right;
+        margin: 0 -9px;
+
+        a {
+            display: inline-block;
+            height: 17px;
+            margin: 0 8px;
+
+            img {
+                display: block;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
